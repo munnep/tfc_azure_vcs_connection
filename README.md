@@ -1,10 +1,12 @@
 # tfc_azure_vcs_connection
 
-This repository describes a step by step creation of the following
+In this repository the goal is to have a workspace in Terraform Cloud that uses a VCS provider to Azure DevOps services.
+
+To accomplish that the following 3 main things must be done
 
 - Create a repository within Azure DevOps Services with Terraform code to execute
-- Create a VCS connection from Terraform Cloud to Azure DevOps
-- Create a workspace within Terraform Cloud  
+- Create a VCS connection from Terraform Cloud to Azure DevOps Services
+- Create a workspace within Terraform Cloud that uses the VCS connection to DevOps services
 
 This repository is based on the official HashiCorp documentation:  
 [https://www.terraform.io/cloud-docs/vcs/azure-devops-services](https://www.terraform.io/cloud-docs/vcs/azure-devops-services)
@@ -12,7 +14,7 @@ This repository is based on the official HashiCorp documentation:
 
 # Prerequisites
 
-- Access to Azure DevOps
+- Access to Azure DevOps Services
 - Access to Terraform Cloud
 
 # How to
@@ -64,7 +66,7 @@ It is used for an example using a VCS provider within Terraform Cloud
 ![](media/2022-03-22-15-25-07.png)  
 ![](media/2022-03-22-15-25-22.png)  
 
-## Check Azure DevOps settings
+## Check Azure DevOps Services settings
 - login to Azure DevOps
 [https://dev.azure.com/](https://dev.azure.com/)
 - go to your organization settings  
@@ -94,15 +96,15 @@ We are going to create an application with DevOps to use
 | Field name                 | Value                                       |
 | -------------------------- | ------------------------------------------- |
 | Company name               | HashiCorp                                   |
-| Application Name           | Terraform Cloud (YOUR ORGANIZATION NAME)    |
+| Application Name           | Terraform Cloud (```YOUR ORGANIZATION NAME```)    |
 | Application website        | https://app.terraform.io                    |
-| Authorization callback URL | https://app.terraform.io/YOUR CALLBACK URLV |
+| Authorization callback URL | https://app.terraform.io/```YOUR CALLBACK URL``` |
 
 - Check the boxes for ```code (read)``` and ```Code (status)``` only  
 ![](media/2022-03-22-15-43-31.png)  
 - at the bottem create application  
 ![](media/2022-03-22-15-43-58.png)  
-- Copy the app secret and client secret to the Terraform Cloud location
+- Copy the app secret and client secret to the Terraform Cloud location  
 ![](media/2022-03-22-15-44-47.png)  
 - Go back to the Terraform Cloud page again
 
