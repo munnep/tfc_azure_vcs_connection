@@ -120,4 +120,17 @@ We are going to create an application with DevOps to use
 
 ## Create a workspace using the VCS provider and the DevOps repository
 
-- Login to Terraform Cloud
+- Login to your Terraform Cloud organization
+[Terraform Cloud](https://app.terraform.io/app)
+- Create a new workspace   
+![](media/2022-03-22-16-01-42.png)  
+- Choose version control workflow  
+![](media/2022-03-22-16-02-06.png) 
+- Choose the Azure DevOps Services connection you created  
+![](media/2022-03-22-16-02-40.png)  
+- Choose the repository you created    
+![](media/2022-03-22-16-03-13.png)   
+- create the workspace  
+![](media/2022-03-22-16-03-40.png)   
+- Start a plan    
+![](media/2022-03-22-16-05-04.png)  
