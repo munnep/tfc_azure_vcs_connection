@@ -98,7 +98,7 @@ We are going to create an application with DevOps to use
 | Company name               | HashiCorp                                   |
 | Application Name           | Terraform Cloud (```YOUR ORGANIZATION NAME```)    |
 | Application website        | https://app.terraform.io                    |
-| Authorization callback URL | https://app.terraform.io/```YOUR CALLBACK URL``` |
+| Authorization callback URL | https://app.terraform.io/ ```YOUR CALLBACK URL``` |
 
 - Check the boxes for ```code (read)``` and ```Code (status)``` only  
 ![](media/2022-03-22-15-43-31.png)  
