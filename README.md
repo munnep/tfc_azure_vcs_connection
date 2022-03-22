@@ -107,3 +107,17 @@ We are going to create an application with DevOps to use
 - Go back to the Terraform Cloud page again
 
 ### Terraform Cloud - Part 2
+
+- Insert a name for the connection
+- Paste the App ID from the Azure page 
+**NOTE the space that you perhaps copy/paste in the beginning**
+- Client Secret  
+![](media/2022-03-22-15-47-46.png)  
+- Accept the connection  
+![](media/2022-03-22-15-57-39.png)  
+- Skip the SSH key pair   
+![](media/2022-03-22-15-59-36.png)  
+
+## Create a workspace using the VCS provider and the DevOps repository
+
+- Login to Terraform Cloud
